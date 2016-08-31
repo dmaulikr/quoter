@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16A313a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -14,14 +14,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="quoter" customModuleProvider="target">
             <connections>
-                <outlet property="enteredText" destination="PHD-P2-l25" id="Z0O-1x-U50"/>
-                <outlet property="quoteInput" destination="PHD-P2-l25" id="yKN-Py-N1I"/>
-                <outlet property="saveText" destination="owA-AP-sFu" id="xwt-NX-pCH"/>
-                <outlet property="textField" destination="PHD-P2-l25" id="VII-Zc-upS"/>
-                <outlet property="transferText" destination="EiT-Mj-1SZ" id="HuO-jx-IEk"/>
-                <outlet property="transferredText" destination="owA-AP-sFu" id="V67-0h-o53"/>
-                <outlet property="trasnferText" destination="FbF-Zg-8UK" id="JOy-IQ-8tR"/>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="quoteInputTextField" destination="PHD-P2-l25" id="xFO-SF-LUo"/>
+                <outlet property="transferTextButton" destination="FbF-Zg-8UK" id="38p-cr-RME"/>
+                <outlet property="transferredTextField" destination="owA-AP-sFu" id="SY4-Qr-xdn"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="A0Y-hK-9wm"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -678,7 +674,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -713,6 +709,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="tranferTextClicked:" target="Voe-Tx-rLC" id="6Hk-jB-ksH"/>
+                        </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSN-6J-niZ" userLabel="enterText">
                         <rect key="frame" x="209" y="263" width="63" height="17"/>
